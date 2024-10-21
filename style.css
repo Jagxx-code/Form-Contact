@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#response-message {
+    margin-top: 20px;
+}
+
+#map {
+    height: 550px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  #location-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .container map {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .map-wrapper {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .bodyContainer {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
