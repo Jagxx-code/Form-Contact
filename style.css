@@ -1,86 +1,84 @@
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(formbgimage.gif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/* Container styling */
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 16px 5px rgba(255, 255, 255, 1);
+  width: 400px;
+  text-align: center;
 }
 
+/* Title styling */
 h1 {
-    margin-bottom: 20px;
+  color: #fdfcfc;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+/* Input fields and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
+/* Textarea height */
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Button styling */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #218838;
+  background-color: #45a049;
 }
 
+/* Response message styling */
 #response-message {
-    margin-top: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ffffff;
 }
 
-#map {
-    height: 550px;
-    width: 100%;
-    margin-bottom: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+      width: 100%;
+      padding: 20px;
   }
-  
-  #location-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 12px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .container map {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .map-wrapper {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .bodyContainer {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+}
