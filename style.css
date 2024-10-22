@@ -8,7 +8,7 @@
 /* Style for the body */
 body {
   font-family: Arial, sans-serif;
-  background-image: url(formbgimage.gif);
+  background-image: url(UI\ Text\ Files.gif);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,4 +81,9 @@ button:hover {
       width: 100%;
       padding: 20px;
   }
+}
+
+.g-recaptcha {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }

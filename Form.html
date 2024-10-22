@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automated Email</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -14,6 +16,7 @@
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
             <textarea id="message" placeholder="Your Message" required></textarea>
+            <div class="g-recaptcha" data-sitekey="6Ldx62gqAAAAAEWuO7rqP37D4A6dq6326SOKActU"></div>
             <button type="submit">Send Email</button>
         </form>
         <div id="response-message"></div>
