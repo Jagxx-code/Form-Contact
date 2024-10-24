@@ -1,5 +1,5 @@
 (function() {
-  emailjs.init("l8r2nVkM56oqdKfwv"); // Replace with your EmailJS User ID
+  emailjs.init("LTrfRsDB9kfDqHUAM"); // Emailjs API key
 })();
 
 document.getElementById("email-form").addEventListener("submit", function(event) {
@@ -19,7 +19,7 @@ document.getElementById("email-form").addEventListener("submit", function(event)
       message: document.getElementById("message").value,
   };
 
-  emailjs.send("service_euszhev", "template_4znqio6", templateParams)
+  emailjs.send("service_ofrpmbp", "template_y4taowh", templateParams)
       .then(function(response) {
           document.getElementById("response-message").innerText = "Email sent successfully!";
           document.getElementById("email-form").reset(); // Reset the form after successful submission

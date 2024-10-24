@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Style for the body */
 body {
   font-family: Arial, sans-serif;
   background-image: url(UI\ Text\ Files.gif);
@@ -17,7 +16,6 @@ body {
   background-size: cover;
 }
 
-/* Container styling */
 .container {
   background-color: transparent;
   padding: 40px;
@@ -27,14 +25,12 @@ body {
   text-align: center;
 }
 
-/* Title styling */
 h1 {
   color: #fdfcfc;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-/* Input fields and textarea styling */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -46,13 +42,11 @@ textarea {
   font-size: 16px;
 }
 
-/* Textarea height */
 textarea {
   height: 100px;
   resize: none;
 }
 
-/* Button styling */
 button {
   background-color: #4CAF50;
   color: white;
@@ -68,14 +62,12 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Response message styling */
 #response-message {
   margin-top: 20px;
   font-size: 16px;
   color: #ffffff;
 }
 
-/* Responsive Design */
 @media (max-width: 500px) {
   .container {
       width: 100%;
