@@ -9,7 +9,7 @@ document.getElementById("email-form").addEventListener("submit", function(event)
   const recaptchaResponse = grecaptcha.getResponse();
 
   if (recaptchaResponse.length === 0) {
-      document.getElementById("response-message").innerText = "Please complete the reCAPTCHA.";
+      document.getElementById("response-message").innerText = "Please complete the reCAPTCHA";
       return; // Exit the function if reCAPTCHA is not completed
   }
 

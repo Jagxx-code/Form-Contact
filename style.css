@@ -5,23 +5,44 @@
 }
 
 body {
-  font-family: "Bungee Spice", sans-serif;
-  background-image: url(UI\ Text\ Files.gif);
+  font-family: "Coiny", serif;
+  background-image: linear-gradient(#0396a6, #fdfcfc );
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 30px;
+  padding-right: 50px;
 }
 
 .container {
+  font-family: "Bungee Spice", serif;
   background-color: transparent;
+  border: 3px solid #0396a6;
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 16px 5px rgba(255, 255, 255, 1);
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
   width: 400px;
   text-align: center;
+  border-radius: 5px;
+  padding-right: 50px;
+}
+
+.container-about {
+  font-size: 28px;
+  background-color: transparent;
+  width: 400px;
+  text-align: center;
+  margin-right: 34px;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
 }
 
 h1 {
@@ -38,9 +59,10 @@ textarea {
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 2px solid #0396a6;
   font-size: 16px;
   padding-left: 33px;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
 textarea {
@@ -49,7 +71,7 @@ textarea {
 }
 
 button {
-  background-color: #168edf;
+  background-color: #0396a6;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -57,6 +79,7 @@ button {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
 button:hover {
@@ -72,17 +95,48 @@ button:hover {
 @media (max-width: 500px) {
   .container {
       width: 100%;
-      padding: 20px;
+      padding: 20px
   }
 }
 
 .g-recaptcha {
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-bottom: 13px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
 #email-form i {
   position: absolute;
   margin-left: 10px;
   margin-top: 22px;
+}
+
+.Logo {
+  padding-right: 2px;
+  text-align: center;
+  margin-right: 15px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.Navigation {
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: auto;
+  margin-left: 80%;
+}
+
+.Navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.Navigation a:hover {
+  text-decoration: underline;
+  color: #020000;
 }
